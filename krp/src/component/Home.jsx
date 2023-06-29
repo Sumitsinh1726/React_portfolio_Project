@@ -5,7 +5,7 @@ import EastRoundedIcon from '@mui/icons-material/EastRounded';
 const Home = () => {
   return (
     <>
-      <div className="">
+      <div className="md:mx-container">
         <section className="flex flex-col items-center justify-center">
           <h3 className="text-6xl font-bold mt-24 mb-12">
             Realtime tracking <br /> your entire
