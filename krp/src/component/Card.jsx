@@ -1,6 +1,8 @@
 import React from "react";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import EastRoundedIcon from '@mui/icons-material/EastRounded';
+
 
 const Card = () => {
   return (
@@ -23,52 +25,8 @@ const Card = () => {
           </div> */}
 
           <div className="flex flex-wrap -m-4 justify-center">
-            {/* <div className="p-3 xl:w-1/3 md:w-1/3 w-full">
-              <div className="h-full p-6 rounded-2xl border border-gray-200 flex flex-col relative overflow-hidden">
-                <div className="border-b border-gray-300">
-                  <h1 className="text-5xl text-gray-900 leading-none flex items-end pb-4 mb-2 border-gray-200">
-                    <span>$12.40</span>
-                    <span className="text-sm ml-1 font-normal text-gray-500">
-                      /month
-                    </span>
-                  </h1>
-                  <p className="bg-gray-200 rounded-md px-3 mb-5 w-4/12">
-                    20% off
-                  </p>
-                </div>
-
-                <h4 className="text-xl font-medium my-5">
-                  Start up starter packs
-                </h4>
-
-                <p className="flex items-center text-gray-600 text-sm">
-                  <ArrowRightIcon className="text-blue-300 " fontSize="large" />
-                  200 projects / month
-                </p>
-
-                <p className="flex items-center text-gray-600 mb-1 text-sm">
-                  <ArrowRightIcon className="text-blue-300 " fontSize="large" />
-                  Expanded channel up to 50 channels
-                </p>
-
-         
-                <p className="flex leading-6 text-gray-600 text-sm mb-6">
-                  <ArrowRightIcon
-                    className="text-blue-300  "
-                    fontSize="large"
-                  />{" "}
-                  Cutomable chart to predict how your growth would go
-                </p>
-
-                <button className=" text-center mt-auto  text-blue-700 bg-violet-300 border-0 py-2 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
-                  More Features
-                  <ArrowForwardIcon />
-                </button>
-              </div>
-            </div> */}
-
             <div className="p-3 xl:w-1/3 md:w-1/3 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                 <div className="border-b border-gray-200">
                   <h1 className="text-5xl text-gray-900 leading-none flex items-end pb-2 mb-4  ">
                     <span>$43.99</span>
@@ -98,7 +56,7 @@ const Card = () => {
                 {/* <div>
                   <div className=""></div>  
                 </div> */}
-                <p className="flex leading-6 text-gray-600 text-sm mb-6">
+                <p className="flex items-center leading-6 text-gray-600 text-sm mb-6">
                   <ArrowRightIcon
                     className="text-blue-300  "
                     fontSize="large"
@@ -106,15 +64,15 @@ const Card = () => {
                   Cutomable chart to predict how your growth would go
                 </p>
 
-                <button className=" text-center mt-auto  text-blue-700 bg-violet-300 border-0 py-2 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
+                <button className=" text-center mt-auto flex justify-center items-center text-lg text-blue-800 bg-gray-200 border-0 py-3 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
                   More Features
-                  <ArrowForwardIcon />
+                  <EastRoundedIcon className="ml-1"/>
                 </button>
               </div>
             </div>
 
             <div className="p-3 xl:w-1/3 md:w-1/3 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                 <div className="border-b border-gray-200">
                   <h1 className="text-5xl text-gray-900 leading-none flex items-end pb-2 mb-4  ">
                     <span>$43.99</span>
@@ -144,7 +102,7 @@ const Card = () => {
                 {/* <div>
                   <div className=""></div>  
                 </div> */}
-                <p className="flex leading-6 text-gray-600 text-sm mb-6">
+                <p className="flex items-center leading-6 text-gray-600 text-sm mb-6">
                   <ArrowRightIcon
                     className="text-blue-300  "
                     fontSize="large"
@@ -152,15 +110,15 @@ const Card = () => {
                   Cutomable chart to predict how your growth would go
                 </p>
 
-                <button className=" text-center mt-auto  text-blue-700 bg-violet-300 border-0 py-2 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
+                <button className=" text-center mt-auto flex justify-center items-center text-lg text-blue-800 bg-gray-200 border-0 py-3 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
                   More Features
-                  <ArrowForwardIcon />
+                  <EastRoundedIcon className="ml-1"/>
                 </button>
               </div>
             </div>
 
             <div className="p-3 xl:w-1/3 md:w-1/3 w-full">
-              <div className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+              <div className="h-full p-4 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
 
                 <div className="border-b border-gray-200">
                   <h1 className="text-5xl text-gray-900 leading-none flex  pb-4 mb-2 items-end">
@@ -192,7 +150,7 @@ const Card = () => {
                 {/* <div>
                   <div className=""></div>  
                 </div> */}
-                <p className="flex leading-6 text-gray-600 text-sm mb-6">
+                <p className="flex items-center leading-6 text-gray-600 text-sm mb-6">
                   <ArrowRightIcon
                     className="text-blue-300  "
                     fontSize="large"
@@ -200,9 +158,9 @@ const Card = () => {
                   Cutomable chart to predict how your growth would go
                 </p>
 
-                <button className=" text-center mt-auto  text-blue-700 bg-violet-300 border-0 py-2 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
-                  More Features
-                  <ArrowForwardIcon />
+                <button className=" text-center mt-auto flex justify-center items-center text-lg text-blue-800 bg-gray-200 border-0 py-3 px-4 my-5 focus:outline-none hover:bg-violet-500 rounded">
+                  More Features 
+                   <EastRoundedIcon className="ml-1" />
                 </button>
                
               </div>

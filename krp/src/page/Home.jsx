@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../component/Card";
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
 const Home = () => {
@@ -12,10 +12,10 @@ const Home = () => {
             <span className="text-violet-700"> business</span>
           </h3>
 
-          <div className="">
-            <button className="inline-flex items-center px-7 py-3 bg-blue-600 rounded-lg text-white mr-4">
+          <div className="flex">
+            <button className="flex items-center px-7 py-3 bg-blue-600 rounded-lg text-white mr-4">
               Start tracking
-              <EastRoundedIcon  />
+              <EastRoundedIcon className="ml-1" />
             </button>
             <button className="px-7 py-3 outline outline-1 text-blue-600 rounded-lg">
               Try demo account
