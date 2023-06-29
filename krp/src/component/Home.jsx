@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 // import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
 const Home = () => {
@@ -13,12 +14,13 @@ const Home = () => {
 
           <div className="">
             <button className="inline-flex items-center px-7 py-3 bg-blue-600 rounded-lg text-white mr-4">
-              Start tracking 
+              Start tracking
               {/* <EastRoundedIcon  /> */}
             </button>
             <button className="px-7 py-3 outline outline-1 text-blue-600 rounded-lg">
               Try demo account
             </button>
+            <Card />
           </div>
         </section>
       </div>
