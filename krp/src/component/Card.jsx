@@ -91,7 +91,7 @@ const Card = () => {
                     </p>
                   </div>
 
-                  <h4 className="text-xl font-medium my-5 px-4">
+                  <h4 className="text-xl font-medium my-5 px-4 text-start  text-gray-600">
                     Start up starter packs
                   </h4>
 
