@@ -25,9 +25,9 @@ const Navbar = () => {
             <NavLink to="/" className="mr-5 hover:text-green-900">
               Home
             </NavLink>
-            <NavLink to="/download" className="mr-5 hover:text-green-900">
+            {/* <NavLink to="/download" className="mr-5 hover:text-green-900">
               Download
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/about" className="mr-5 hover:text-green-900">
               About
             </NavLink>
