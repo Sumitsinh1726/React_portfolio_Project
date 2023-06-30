@@ -5,9 +5,9 @@ import EastRoundedIcon from '@mui/icons-material/EastRounded';
 const Home = () => {
   return (
     <>
-      <div className="md:mx-container">
-        <section className="flex flex-col items-center justify-center h-[75vh]">
-          <h3 className="text-6xl font-bold mt-24 mb-12">
+      <div className="">
+        <section className="flex flex-col items-center justify-center h-[95vh] bg-home-hero bg-center bg-cover ">
+          <h3 className="text-6xl font-bold mb-12 text-black">
             Realtime tracking <br /> your entire
             <span className="text-violet-700"> business</span>
           </h3>
@@ -17,14 +17,14 @@ const Home = () => {
               Start tracking
               <EastRoundedIcon className="ml-1" />
             </button>
-            <button className="px-7 py-4 outline outline-1 text-blue-600 rounded-lg hover:bg-blue-800 hover:text-white">
+            <button className="px-7 py-4 outline outline-1 text-black rounded-lg hover:bg-blue-800 hover:text-white hover:outline-none">
               Try demo account
               <EastRoundedIcon className="ml-1" />
             </button>
           </div>
         </section>
 
-        <section>
+        <section className="md:mx-container">
             <Card />
         </section>
       </div>
