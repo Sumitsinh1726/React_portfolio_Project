@@ -6,9 +6,9 @@ const Navbar = () => {
     <>
       <header className="text-gray-600 body-font md:mx-container ">
         <div className=" mx-auto flex flex-wrap py-5 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <NavLink to="/" className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <span className="ml-3 text-xl">Sales Manage</span>
-          </a>
+          </NavLink>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <NavLink
               to="/"
@@ -32,7 +32,8 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </nav>
-          <navbtn className="flex gap-3">
+
+          <div className="flex gap-3">
             <section>
               <NavLink
                 to="/login"
@@ -42,9 +43,9 @@ const Navbar = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-4 h-4 ml-1"
                   viewBox="0 0 24 24"
                 >
@@ -61,9 +62,9 @@ const Navbar = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-4 h-4 ml-1"
                   viewBox="0 0 24 24"
                 >
@@ -71,7 +72,7 @@ const Navbar = () => {
                 </svg>
               </NavLink>
             </section>
-          </navbtn>
+          </div>
         </div>
       </header>
     </>

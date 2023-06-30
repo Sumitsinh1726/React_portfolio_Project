@@ -3,12 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../page/Home";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
-import Download from "../page/Download";
+// import Download from "../page/Download";
 import About from "../page/About";
 import Contact from "../page/Contact";
-import Signup from "../page/Signup";
 import Page404 from "../page/Page404";
 import Login from "../login/Login";
+import Signup from "../login/Signup";
 import AdminLogin from "../login/AdminLogin";
 
 const Router = () => {
