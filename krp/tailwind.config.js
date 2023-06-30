@@ -12,7 +12,8 @@ module.exports = {
         '3xl': 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px',
       },
       backgroundImage: {
-        'home-hero': 'url(./images/home-hero.jpg)'
+        'home-hero': 'url(./images/home-hero.jpg)',
+        'loginimg' : 'url(./images/Login.jpg)'
       },
     },
   },
