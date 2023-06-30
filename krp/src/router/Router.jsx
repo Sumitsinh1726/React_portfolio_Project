@@ -15,13 +15,13 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* This is For the page Download */}
-        <Route path="/download" element={<Download />} />
+        {/* <Route path="/download" element={<Download />} /> */}
 
         {/* This is For the page About */}
         <Route path="/about" element={<About />} />
 
         {/* This is For the page About */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
 
         {/* This is For the page About */}
         <Route path="/signup" element={<Signup />} />
