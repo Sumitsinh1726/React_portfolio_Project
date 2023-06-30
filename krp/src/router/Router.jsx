@@ -8,7 +8,8 @@ import About from "../page/About";
 import Contact from "../page/Contact";
 import Signup from "../page/Signup";
 import Page404 from "../page/Page404";
-import Login from "../page/Login";
+import Login from "../login/Login";
+import AdminLogin from "../login/AdminLogin";
 
 const Router = () => {
   return (
@@ -30,6 +31,9 @@ const Router = () => {
 
         {/* This is For the page Login */}
         <Route path="/login" element={<Login />} />
+
+        {/* This is For the page AdminLogin */}
+        <Route path="/admin" element={<AdminLogin />} />
 
         {/* This is For the page Login */}
         <Route path="*" element={<Page404 />} />

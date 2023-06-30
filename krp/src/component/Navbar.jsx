@@ -10,36 +10,68 @@ const Navbar = () => {
             <span className="ml-3 text-xl">Sales Manage</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <NavLink to="/" className="mr-5 hover:text-green-900">
+            <NavLink
+              to="/"
+              className="mr-5  text-base text-black font-semibold hover:text-indigo-500"
+            >
               Home
             </NavLink>
             {/* <NavLink to="/download" className="mr-5 hover:text-green-900">
               Download
             </NavLink> */}
-            <NavLink to="/about" className="mr-5 hover:text-green-900">
+            <NavLink
+              to="/about"
+              className="mr-5 text-base text-black font-semibold hover:text-indigo-500"
+            >
               About
             </NavLink>
-            <NavLink to="/contact" className="mr-5 hover:text-green-900">
+            <NavLink
+              to="/contact"
+              className="mr-5 text-base text-black font-semibold hover:text-indigo-500"
+            >
               Contact Us
             </NavLink>
           </nav>
-          <NavLink
-            to="/signup"
-            className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
-          >
-            Sign Up
-            <svg
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </NavLink>
+          <navbtn className="flex gap-3">
+            <section>
+              <NavLink
+                to="/login"
+                className="inline-flex items-center bg-indigo-300 text-black border-0 py-1  px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+              >
+                Login
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </NavLink>
+            </section>
+            <section>
+              <NavLink
+                to="/signup"
+                className="inline-flex items-center bg-indigo-300 text-black border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+              >
+                Sign Up
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  className="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </NavLink>
+            </section>
+          </navbtn>
         </div>
       </header>
     </>
