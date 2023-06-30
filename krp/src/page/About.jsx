@@ -2,6 +2,12 @@ import React from "react";
 import image1 from "../images/image1.jpg";
 import image2 from "../images/Image2.jpg";
 import Logo1 from "../images/Logo1.png"
+import task1 from "../images/task.png";
+import ux from "../images/ux.png";
+import task2 from "../images/task2.png";
+import task3 from "../images/testing.png";
+import task4 from "../images/rocket.png";
+
 
 const About = () => {
   return (
@@ -90,7 +96,7 @@ const About = () => {
               <div className="flex flex-col">
                 <div className="flex">
                   <div className="me-2 ">
-                  <img src={Logo1} alt="" width={250} />
+                  <img src={Logo1} alt="" width={160} />
                   </div>
                   <div className="">
                     <h4 className="text-lg font-semibold">Discovery</h4>
@@ -107,7 +113,23 @@ const About = () => {
 
                 <div className="flex">
                   <div className="me-2 ">
-                  <img src={Logo1} alt="" width={250} /></div>
+                  <img src={task1} alt="" width={160} /></div>
+                  <div className="">
+                    <h4 className="text-lg font-semibold">Planning</h4>
+                    <p className="text-gray-600 my-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni delectus quia debitis veritatis cumque, et nihil
+                      mollitia blanditiis vitae ratione, illum voluptates neque.
+                      Perspiciatis, aperiam nesciunt, nihil earum eveniet
+                      molestiae omnis dolorem ex consectetur repellendus, nulla
+                      sequi inventore consequuntur quisquam!
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="me-2 ">
+                    <img src={ux} alt="" width={160} />
+                  </div>
                   <div className="">
                     <h4 className="text-lg font-semibold">Discovery</h4>
                     <p className="text-gray-600 my-5">
@@ -121,9 +143,29 @@ const About = () => {
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="me-2 ">Icons</div>
+                  <div className="me-2 ">
+                    <img src={task2} alt="" width={160} />
+                  </div>
                   <div className="">
-                    <h4 className="text-lg font-semibold">Discovery</h4>
+                    <h4 className="text-lg font-semibold">Development</h4>
+                    <p className="text-gray-600 my-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni delectus quia debitis veritatis cumque, et nihil
+                      mollitia blanditiis vitae ratione, illum voluptates neque.
+                      Perspiciatis, aperiam nesciunt, nihil earum eveniet
+                      molestiae omnis dolorem ex consectetur repellendus, nulla
+                      sequi inventore consequuntur quisquam!
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex">
+                  <div className="me-2 ">
+
+                    <img src={task3} alt="" width={160}/>
+                  </div>
+                  <div className="">
+                    <h4 className="text-lg font-semibold">Testing</h4>
                     <p className="text-gray-600 my-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Magni delectus quia debitis veritatis cumque, et nihil
@@ -135,37 +177,11 @@ const About = () => {
                   </div>
                 </div>
                 <div className="flex">
-                  <div className="me-2 ">Icons</div>
-                  <div className="">
-                    <h4 className="text-lg font-semibold">Discovery</h4>
-                    <p className="text-gray-600 my-5">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magni delectus quia debitis veritatis cumque, et nihil
-                      mollitia blanditiis vitae ratione, illum voluptates neque.
-                      Perspiciatis, aperiam nesciunt, nihil earum eveniet
-                      molestiae omnis dolorem ex consectetur repellendus, nulla
-                      sequi inventore consequuntur quisquam!
-                    </p>
+                  <div className="me-2 ">
+                    <img src={task4} alt="" width={160} />
                   </div>
-                </div>
-                <div className="flex">
-                  <div className="me-2 ">Icons</div>
                   <div className="">
-                    <h4 className="text-lg font-semibold">Discovery</h4>
-                    <p className="text-gray-600 my-5">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Magni delectus quia debitis veritatis cumque, et nihil
-                      mollitia blanditiis vitae ratione, illum voluptates neque.
-                      Perspiciatis, aperiam nesciunt, nihil earum eveniet
-                      molestiae omnis dolorem ex consectetur repellendus, nulla
-                      sequi inventore consequuntur quisquam!
-                    </p>
-                  </div>
-                </div>
-                <div className="flex">
-                  <div className="me-2 ">Icons</div>
-                  <div className="">
-                    <h4 className="text-lg font-semibold">Discovery</h4>
+                    <h4 className="text-lg font-semibold">Launch</h4>
                     <p className="text-gray-600 my-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Magni delectus quia debitis veritatis cumque, et nihil
@@ -181,6 +197,25 @@ const About = () => {
             </div>
           </div>
         </section>
+
+        {/* Fourth Section */}
+
+        <section>
+          <div className="flex flex-col justify-center items-center">
+            <div className=" text-center w-3/12">
+              <h1 className="text-4xl font-semibold">That's all about me feel free to say Hi!</h1>
+            </div>
+            <div className="text-center w-7/12">
+              <p className="text-gray-600 my-8"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque numquam vero beatae provident dicta, veritatis ullam autem delectus? Quis, labore!</p>
+              <button className=" outline outline-1 text-blue-400 px-3 text-center rounded-lg hover:bg-blue-400 hover:text-white py-3 my-4">
+                  Get In Touch
+                </button>
+            </div>
+
+
+          </div>
+        </section>
+ 
       </div>
     </>
   );
