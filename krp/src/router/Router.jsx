@@ -35,7 +35,7 @@ const Router = () => {
         {/* This is For the page AdminLogin */}
         <Route path="/admin" element={<AdminLogin />} />
 
-        {/* This is For the page Login */}
+        {/* This is For the 404page login  */}
         <Route path="*" element={<Page404 />} />
       </Routes>
       <Footer />
