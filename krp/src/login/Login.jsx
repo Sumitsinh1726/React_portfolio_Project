@@ -7,7 +7,7 @@ const Login = () => {
       <div className="md:mx-container">
         <section className="">
           <div className="flex w-full px-4 justify-center">
-            <div className="w-5/12 py-24 flex justify-center items-center bg-loginimg bg-cover bg-center rounded-[15px] my-5">
+            <div className="w-6/12 py-24 flex justify-center items-center bg-loginimg bg-cover bg-center rounded-[15px] my-5">
               
               <div className="w-9/12">
                 <form className="w-12/12">

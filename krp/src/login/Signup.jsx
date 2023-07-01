@@ -4,36 +4,39 @@ const Signup = () => {
   return (
     <div className="md:mx-container">
       <section className="">
-        <div className="flex w-full px-4 justify-center">
-          <div className="w-5/12  flex flex-col justify-center items-center bg-loginimg bg-cover bg-center rounded-[15px] my-5 overflow-auto max-h-[84vh] ">
+        <div className="flex w-full justify-center">
+          <div className="w-6/12  flex flex-col justify-center items-center bg-loginimg bg-cover bg-center rounded-[20px] my-5  ">
             {/* <div className="w-9/12  "> */}
-            <div className="sticky top-0 backdrop-blur-lg w-full text-center py-4">
+            <div className=" backdrop-blur-lg w-full pl-20 pt-12 py-4">
               <h1 className="text-2xl font-semibold ">Register Now</h1>
-              <p className="text-gray-6000 mt-4 ">Register self Here</p>
+              <p className="text-gray-6000 mt-4 text-start font-semibold ">
+                Register and Grow Your Business
+              </p>
             </div>
 
-            <form className="text-start flex flex-col w-9/12 pt-80 pb-12 space-y-5">
-              <div className="">
-                <label className="text-gray-600  ">First Name</label>
+            <form className="text-start flex flex-col w-9/12 py-5 pb-10 space-y-5">
+              <section className="flex gap-2">
+                <div className="">
+                  <label className="text-gray-600  ">First Name</label>
 
-                <input
-                  type="text"
-                  name=""
-                  className="border mt-1 text-gray-500 rounded px-3 py-3  hover:border-violet-400 outline-1 outline-violet-500 w-full"
-                  placeholder="Enter your Last Name"
-                />
-              </div>
+                  <input
+                    type="text"
+                    name=""
+                    className="border mt-1 text-gray-500 rounded px-3 py-3  hover:border-violet-400 outline-1 outline-violet-500 w-full"
+                    placeholder="Enter your Last Name"
+                  />
+                </div>
 
-              <div className="">
-                <label className="text-gray-600 ">Last Name</label>
-                <input
-                  type="text"
-                  name=""
-                  className="border mt-1 text-gray-500 rounded px-3 py-3  hover:border-violet-400 outline-1 outline-violet-500 w-full"
-                  placeholder="Enter your Last Name"
-                />
-              </div>
-
+                <div className="">
+                  <label className="text-gray-600 ">Last Name</label>
+                  <input
+                    type="text"
+                    name=""
+                    className="border mt-1 text-gray-500 rounded px-3 py-3  hover:border-violet-400 outline-1 outline-violet-500 w-full"
+                    placeholder="Enter your Last Name"
+                  />
+                </div>
+              </section>
               <div className="">
                 <label className="text-gray-600 ">Username</label>
                 <input
