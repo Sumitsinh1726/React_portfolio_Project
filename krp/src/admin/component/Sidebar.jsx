@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../../images/logo.png";
 import { NavLink } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 
@@ -12,7 +13,12 @@ const Sidebar = () => {
   return (
     <>
       <aside className="w-2/12 relative h-screen border-r">
-        <h4 className="text-center text-lg font-medium py-8">Sales</h4>
+        <h4 className="text-center text-lg font-medium py-4">
+          <span className="flex items-center  ml-3 text-xl">
+            <img src={Logo} className="h-[6vh]" alt="" />
+            <p className="font-navlogo text-xl pt-2">Sales Grow</p>
+          </span>
+        </h4>
 
         <ul className="">
           <li className="mx-3 my-1">
