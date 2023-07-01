@@ -1,14 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "../images/logo.png";
 
 const Footer = () => {
   return (
     <>
-      <footer className="text-gray-600 body-font md:mx-container">
-        <div className="container py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <footer className="text-gray-600 body-font">
+        <div className="md:px-container mx-auto py-12 flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-            <NavLink to="/" className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <span className="ml-3 text-xl">Sales Manage</span>
+            <NavLink
+              to="/"
+              className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            >
+              <span className="flex items-center  ml-3 text-xl">
+                <img src={Logo} className="h-[6vh]" />
+                <p className="font-navlogo text-xl pt-2">Sales Grow</p>
+              </span>
             </NavLink>
           </div>
 

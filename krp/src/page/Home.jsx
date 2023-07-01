@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../component/Card";
 import EastRoundedIcon from "@mui/icons-material/EastRounded";
+import Carousel from "../component/Carousel";
 
 const Home = () => {
   return (
@@ -23,7 +24,9 @@ const Home = () => {
             </button>
           </div>
         </section>
-
+        <section className="md:mx-container">
+          <Carousel />
+        </section>
         <section className="md:mx-container">
           <Card />
         </section>
