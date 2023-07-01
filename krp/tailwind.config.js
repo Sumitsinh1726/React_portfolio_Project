@@ -15,6 +15,9 @@ module.exports = {
         'home-hero': 'url(./images/home-hero.jpg)',
         'loginimg' : 'url(./images/Login.jpg)'
       },
+      fontFamily:{
+        'navlogo' : 'Belanosima'
+      }
     },
   },
   plugins: [],
