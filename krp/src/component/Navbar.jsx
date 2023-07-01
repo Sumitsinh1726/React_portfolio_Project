@@ -12,7 +12,7 @@ const Navbar = () => {
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           >
             <span className="flex items-center  ml-3 text-xl">
-              <img src={Logo} className="h-[6vh]" />
+              <img src={Logo} className="h-[6vh]" alt="" />
               <p className="font-navlogo text-xl pt-2">Sales Grow</p>
             </span>
           </NavLink>
