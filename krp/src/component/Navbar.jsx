@@ -12,7 +12,7 @@ const Navbar = () => {
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           >
             <span className="flex items-center  ml-3 text-xl">
-              <img src={Logo} className="h-[6vh]" alt="" srcset="" />
+              <img src={Logo} className="h-[6vh]" />
               <p className="font-navlogo text-xl pt-2">Sales Grow</p>
             </span>
           </NavLink>
@@ -44,7 +44,7 @@ const Navbar = () => {
             <section>
               <NavLink
                 to="/login"
-                className="inline-flex items-center bg-indigo-400 text-white border-0 py-1 px-4 focus:outline-none hover:bg-indigo-700 rounded text-lg mt-4 md:mt-0"
+                className="inline-flex items-center bg-blue-800 text-white border-0 py-1 px-4 focus:outline-none hover:bg-blue-900 rounded text-lg mt-4 md:mt-0"
               >
                 Login
               </NavLink>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <section>
               <NavLink
                 to="/signup"
-                className="inline-flex items-center bg-indigo-400 text-white border-0 py-1 px-4 focus:outline-none hover:bg-indigo-700 rounded text-lg mt-4 md:mt-0"
+                className="inline-flex items-center outline outline-1 text-black border-0 py-1 px-4 focus:outline-none hover:bg-blue-900 hover:text-white rounded text-lg mt-4 md:mt-0"
               >
                 Sign Up
               </NavLink>

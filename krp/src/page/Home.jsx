@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../component/Card";
-import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import EastRoundedIcon from "@mui/icons-material/EastRounded";
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
         </section>
 
         <section className="md:mx-container">
-            <Card />
+          <Card />
         </section>
       </div>
     </>
