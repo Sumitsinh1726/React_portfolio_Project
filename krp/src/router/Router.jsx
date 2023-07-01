@@ -24,13 +24,13 @@ const Router = () => {
     <>
       {path.includes("admin") ? (
         <>
-          <Sidebar />
+          {/* <Sidebar /> */}
           <Routes>
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<Dashboard />} />
           </Routes>
         </>
-      ) : (
+     ):(
         <>
           <Navbar />
           <Routes>
