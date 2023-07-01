@@ -3,7 +3,7 @@ import React from 'react'
 const Dashboard = () => {
   return (
     <>
-      <div className="">
+      <div className="w-10/12 absolute right-0 top-0">
 
         Dashboard
       </div>
