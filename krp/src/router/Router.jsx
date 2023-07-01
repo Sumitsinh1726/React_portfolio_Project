@@ -11,7 +11,10 @@ import Login from "../login/Login";
 import Signup from "../login/Signup";
 import AdminLogin from "../login/AdminLogin";
 import Dashboard from "../admin/Dashboard";
-import Sidebar from "../admin/component/Sidebar";
+// import Sidebar from "../admin/component/Sidebar";
+
+// import Sidebar from "../sales/component/Sidebar";
+import SalesDashboard from "../sales/SalesDashboard";
 
 const Router = () => {
   const [path, setPath] = useState("/");
@@ -30,7 +33,16 @@ const Router = () => {
             <Route path="/admin/dashboard" element={<Dashboard />} />
           </Routes>
         </>
-     ):(
+     ):
+        path.includes("sales") ? (
+          <>
+          
+            <Routes>
+                <Route path="/sales/dashboard" element={<SalesDashboard/>} />
+            </Routes>
+          </>
+        )
+     :(
         <>
           <Navbar />
           <Routes>
