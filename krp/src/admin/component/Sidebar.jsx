@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../images/logo.png";
 import { NavLink } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 
 const Sidebar = () => {
   const active = ({ isActive }) => {
@@ -12,7 +13,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <aside className="w-2/12 relative h-screen border-r">
+      <aside className="w-2/12 fixed h-screen border-r">
         <NavLink to="/" className="text-center text-lg font-medium py-4 block">
           <span className="flex items-center  ml-3 text-xl">
             <img src={Logo} className="h-[6vh]" alt="" />
@@ -90,7 +91,7 @@ const Sidebar = () => {
                 style={active}
                 className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
               >
-                <DashboardIcon className="mr-2" />
+                <LogoutRoundedIcon className="mr-2" />
                 Logout
               </NavLink>
             </li>
