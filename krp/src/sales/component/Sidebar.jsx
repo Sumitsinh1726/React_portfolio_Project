@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <>
       <aside className="w-[100px] h-screen bg-[#f9f5f2] relative ">
-        <div className="flex  justify-center text-center ">
+        <div className="flex  justify-center text-center mb-12 ">
           <img
             src={Logo}
             alt=""
@@ -58,7 +58,7 @@ const Sidebar = () => {
             </ul>
           </div>
 
-          <div className=" text-center justify-center items-center absolute bottom-0 right-[20px]">
+          <div className=" text-center justify-center items-center absolute bottom-0 w-full">
             <ul className=" ">
               <li className="my-5 ">
                 <NavLink to="/sales/contact" className="px-2 py-2 rounded-lg" style={active}>

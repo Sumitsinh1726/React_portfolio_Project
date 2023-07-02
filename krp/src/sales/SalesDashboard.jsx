@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./component/Sidebar";
+import NevbarSales from "./component/NevbarSales";
 
 const SalesDashboard = () => {
 
@@ -12,8 +13,8 @@ const SalesDashboard = () => {
             <div className="w-[100px]">
                 <Sidebar/>
             </div>
-            <div className="">
-                <h1>DashBoard</h1>
+            <div className="w-full">
+                <NevbarSales/>
             </div>
         </div>
      </section>
