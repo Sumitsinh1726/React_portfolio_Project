@@ -1,6 +1,6 @@
 import React from "react";
 import StarIcon from "@mui/icons-material/Star";
-import salesProfile from "../../images/sales profile.avif";
+import salesProfile from "../../images/profile.avif";
 import Navimg from "../../images/navbarimage.jpeg"
 
 
