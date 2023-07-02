@@ -7,7 +7,7 @@ import Navimg from "../../images/navbarimage.jpeg"
 const NevbarSales = () => {
     return (
         <>
-            <header className="h-28 bg-black text-white   w-[93%] absolute top-0 right-0">
+            <header className="h-28 bg-black text-white w-[93%] absolute top-0 right-0">
 
 
                 <div className=" ml-12 flex justify-center items-center absolute w-[27%] -bottom-[38%] ">

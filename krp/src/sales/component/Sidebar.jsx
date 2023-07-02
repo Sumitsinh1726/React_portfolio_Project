@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <aside className="w-[7%] h-screen bg-[#f9f5f2] relative ">
+      <aside className="w-[7%] h-screen bg-[#f9f5f2] fixed ">
         <div className="flex  justify-center text-center mb-12 ">
           <img
             src={Logo}
