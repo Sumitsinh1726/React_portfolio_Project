@@ -175,8 +175,73 @@ const SalesDashboard = () => {
             </div>
           </div>
         </div>
+
+        {/* Second Section */}
+
+        <section className="py-20">
+          <div className="flex gap-8">
+            <div className="w-7/12">
+              <table className="w-full">
+
+
+
+                <thead className="pb-5 ">
+
+                  <tr className="text-gray-600 border-b my-2 py-2">
+                    <td className="pb-3">Book</td>
+                    <td className="pb-3"></td>
+                    <td className="pb-3">Genre</td>
+                    <td className="pb-3">Date</td>
+                    <td className="pb-3">Status</td>
+                    <td className="pb-3">Price</td>
+                  </tr>
+
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="rounded-full text-sm py-3">
+                      <span className="w-2/12 bg-[#f9f5f2] rounded-full px-3 py-3 font-bold text-sm">01</span>
+                    </td>
+                    <td className="py-3 font-semibold" >Milk and honey</td>
+                    <td className="py-3 text-[14px]">Poetry</td>
+                    <td className="py-3 text-[14px]">19 jun</td>
+                    <td className="py-3">Reading</td>
+                    <td className="py-3">$13</td>
+                  </tr>
+
+                  <tr>
+                    <td className=" py-3 ">
+                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3">01</span>
+
+                    </td>
+                    <td className="py-3 font-semibold" >Milk and honey</td>
+                    <td className="py-3 text-[14px]">Poetry</td>
+                    <td className="py-3 text-[14px]">19 jun</td>
+                    <td className="py-3">Reading</td>
+                    <td className="py-3">$13</td>
+                  </tr>
+
+
+                  <tr>
+                    <td className="rounded-full py-3 ">
+                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3">01</span>
+                    </td>
+                    <td className="py-3 font-semibold" >Milk and honey</td>
+                    <td className="py-3 text-[14px]">Poetry</td>
+                    <td className="py-3 text-[14px]">19 jun</td>
+                    <td className="py-3">Reading</td>
+                    <td className="py-3">$13</td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+            </div>
+            <div className="w-5/12"></div>
+          </div >
+        </section >
         {/* Page Name */}
-      </div>
+      </div >
     </>
   );
 };
