@@ -1,6 +1,12 @@
 import React from "react";
 import Logo from "../../images/logo.png";
 import { NavLink } from "react-router-dom";
+import TimelineRoundedIcon from '@mui/icons-material/TimelineRounded';
+import ReceiptLongRoundedIcon from '@mui/icons-material/ReceiptLongRounded';
+import ImportExportRoundedIcon from '@mui/icons-material/ImportExportRounded';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 
@@ -28,7 +34,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <TimelineRoundedIcon className="mr-2" />
               Dashboard
             </NavLink>
           </li>
@@ -38,7 +44,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <ReceiptLongRoundedIcon className="mr-2" />
               Invoices
             </NavLink>
           </li>
@@ -48,7 +54,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <ImportExportRoundedIcon className="mr-2" />
               Transection
             </NavLink>
           </li>
@@ -58,7 +64,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <ShoppingCartOutlinedIcon className="mr-2" />
               Products
             </NavLink>
           </li>
@@ -68,7 +74,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <GroupOutlinedIcon className="mr-2" />
               My Team
             </NavLink>
           </li>
@@ -78,7 +84,7 @@ const Sidebar = () => {
               style={active}
               className="block pl-5 py-3 rounded-lg hover:bg-black hover:text-white"
             >
-              <DashboardIcon className="mr-2" />
+              <SettingsOutlinedIcon className="mr-2" />
               Settings
             </NavLink>
           </li>

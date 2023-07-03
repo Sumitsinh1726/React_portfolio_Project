@@ -14,19 +14,19 @@ const Dashboard = () => {
       <div className="w-10/12 absolute right-0 top-[70px] px-12 flex gap-12">
         <div className="w-[71%] py-4">
           <div className="flex justify-between">
-            <div className="bg-gray-50 py-4 px-6 rounded-lg">
+            <div className="bg-gray-50 py-4 px-12 rounded-lg">
               <p className="text-sm font-medium text-gray-400">
                 Total Earning <TrendingUpIcon />
               </p>
               <h3 className="text-2xl font-medium">$12,495.00</h3>
             </div>
-            <div className="bg-gray-50 py-4 px-6 rounded-lg">
+            <div className="bg-gray-50 py-4 px-12 rounded-lg">
               <p className="text-sm font-medium text-gray-400">
                 Total Spending <TrendingDownRoundedIcon />
               </p>
               <h3 className="text-2xl font-medium">$09,495.00</h3>
             </div>
-            <div className="bg-gray-50 py-4 px-6 rounded-lg">
+            <div className="bg-gray-50 py-4 px-12 rounded-lg">
               <p className="text-sm font-medium text-gray-400">
                 Goal This Month <TrendingUpIcon />
               </p>
