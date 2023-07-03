@@ -2,8 +2,13 @@ import React from "react";
 import Sidebar from "./component/Sidebar";
 import NevbarSales from "./component/NevbarSales";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
+import EastIcon from '@mui/icons-material/East';
+import visible from "../images/visible.png";
+import hourglass from "../images/hourglass.png"
+import donotdisturb from "../images/do-not-disturb.png"
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
 
-import Bird from "../images/Bird.png"
+// import Bird from "../images/Bird.png"
 
 const SalesDashboard = () => {
   return (
@@ -56,7 +61,7 @@ const SalesDashboard = () => {
                     <button className="bg-black text-white px-5 py-2 rounded-3xl">
                       View
                     </button>
-                    <button className="border border-red-200 px-5 py-2 text-white rounded-3xl">
+                    <button className="border border-red-200 px-5 py-2 text-white rounded-3xl whitespace-nowrap ">
                       Buy for $12
                     </button>
                   </div>
@@ -178,9 +183,15 @@ const SalesDashboard = () => {
 
         {/* Second Section */}
 
-        <section className="py-20">
+        <section className="py-6">
           <div className="flex gap-8">
             <div className="w-7/12">
+              <div className="">
+                <div className="flex justify-between pb-4">
+                  <p className="text-2xl font-semibold">Purchases</p>
+                  <p className="text-sm text-yellow-300 mr-5">View All</p>
+                </div>
+              </div>
               <table className="w-full">
 
 
@@ -205,39 +216,112 @@ const SalesDashboard = () => {
                     <td className="py-3 font-semibold" >Milk and honey</td>
                     <td className="py-3 text-[14px]">Poetry</td>
                     <td className="py-3 text-[14px]">19 jun</td>
-                    <td className="py-3">Reading</td>
-                    <td className="py-3">$13</td>
+                    <td className="py-3 text-[12px] ">
+                      <span className=" bg-[#ffeeda] text-[#d4bb9c] px-4 py-1 rounded-3xl font-medium">Reading </span>
+                    </td>
+                    <td className="py-3 font-semibold">$13</td>
                   </tr>
 
                   <tr>
-                    <td className=" py-3 ">
-                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3">01</span>
+                    <td className=" py-3 text-sm ">
+                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3 text-sm">01</span>
 
                     </td>
                     <td className="py-3 font-semibold" >Milk and honey</td>
                     <td className="py-3 text-[14px]">Poetry</td>
                     <td className="py-3 text-[14px]">19 jun</td>
-                    <td className="py-3">Reading</td>
-                    <td className="py-3">$13</td>
+                    <td className="py-3 text-[12px]  ">
+                      <span className="bg-[#ffeeda] text-[#d4bb9c] px-4 py-1 rounded-3xl font-medium">Reading </span></td>
+                    <td className="py-3 text-[14px] font-semibold">$13</td>
                   </tr>
 
 
                   <tr>
-                    <td className="rounded-full py-3 ">
-                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3">01</span>
+                    <td className="rounded-full py-3 text-sm ">
+                      <span className="w-2/12 bg-[#f9f5f2] rounded-full font-bold px-3 py-3 text-sm">01</span>
                     </td>
                     <td className="py-3 font-semibold" >Milk and honey</td>
                     <td className="py-3 text-[14px]">Poetry</td>
                     <td className="py-3 text-[14px]">19 jun</td>
-                    <td className="py-3">Reading</td>
-                    <td className="py-3">$13</td>
+                    <td className="py-3 text-[12px]  ">
+                      <span className="bg-[#d5f2cd] text-[#b0cca7] px-4 py-1 rounded-3xl font-medium"> Read </span></td>
+                    <td className="py-3 font-semibold">$13</td>
                   </tr>
 
 
                 </tbody>
               </table>
             </div>
-            <div className="w-5/12"></div>
+            <div className="w-5/12">
+
+
+              <div className="mb-4">
+                <p className="text-2xl font-semibold">Book Reviews</p>
+              </div>
+
+              <div className="flex bg-[#faf7f8] px-3 py-1 rounded-lg">
+
+                <div className="w-2/12">
+                  <img src={visible} alt="" width={47} />
+                </div>
+                <div className="flex justify-between w-9/12">
+                  <div className="">
+                    <p className="text-sm font-bold">Things We Never Got Over</p>
+                    <p className="">Star</p>
+                  </div>
+                  <div className="flex items-center text-gray-400">
+                    <EastIcon />
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="flex bg-[#faf7f8] px-3 py-1 my-5 rounded-lg">
+
+                <div className="w-2/12">
+                  <img src={hourglass} alt="" width={47} />
+                </div>
+                <div className="flex justify-between w-9/12">
+                  <div className="">
+                    <p className="text-sm font-bold"> Already brillent </p>
+                    <p className="">Star</p>
+                  </div>
+                  <div className="flex items-center text-gray-400">
+                    <EastIcon />
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div className="flex bg-[#faf7f8] px-3 py-1 rounded-lg">
+
+                <div className="w-2/12">
+
+
+                  <img src={donotdisturb} alt="" width={47} />
+                </div>
+                <div className="flex justify-between w-9/12">
+                  <div className="">
+                    <p className="text-sm font-bold">She Must Be Mad</p>
+                    <p className="">Star</p>
+                  </div>
+                  <div className="flex items-center">
+                    <div className="bg-black px-3 py-2 rounded-xl flex items-center ">
+                      <span className="text-white mx-2 "><CheckBoxIcon/></span>
+                      <p className="text-white text-xs">User Choise</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+
           </div >
         </section >
         {/* Page Name */}
