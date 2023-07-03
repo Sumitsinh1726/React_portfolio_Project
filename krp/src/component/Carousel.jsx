@@ -15,7 +15,7 @@ const Carousel = () => {
   return (
     <>
       <div className="w-full text-center py-9">
-      <p className="text-2xl font-bold">Our Vesion </p>
+      <p className="text-2xl font-bold">Our Vision </p>
         <div className="container mx-auto">
           <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
             {/* Carousel for desktop and large size devices */}
