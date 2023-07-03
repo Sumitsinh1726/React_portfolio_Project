@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
   return (
     <>
-      <aside className="w-[7%] h-screen bg-[#f9f5f2] fixed ">
+      <aside className="w-[5%] h-screen bg-[#f9f5f2] fixed ">
         <div className="flex  justify-center text-center mb-12 ">
           <img
             src={Logo}
@@ -32,7 +32,7 @@ const Sidebar = () => {
                   className=" px-2 py-2 rounded-lg"
                   style={active}
                 >
-                  <HomeIcon fontSize="large" className="text-gray-500" />
+                  <HomeIcon fontSize="medium" className="text-gray-500" />
                 </NavLink>
               </li>
 
@@ -42,7 +42,7 @@ const Sidebar = () => {
                   className=" px-2 py-2 rounded-lg"
                   style={active}
                 >
-                  <MenuBookIcon fontSize="large" className="text-gray-500" />
+                  <MenuBookIcon fontSize="medium" className="text-gray-500" />
                 </NavLink>
               </li>
 
@@ -52,7 +52,7 @@ const Sidebar = () => {
                   className=" px-2 py-2 rounded-lg"
                   style={active}
                 >
-                  <AssessmentIcon fontSize="large" className="text-gray-500" />
+                  <AssessmentIcon fontSize="medium" className="text-gray-500" />
                 </NavLink>
               </li>
             </ul>
@@ -62,23 +62,23 @@ const Sidebar = () => {
             <ul className=" ">
               <li className="my-5 ">
                 <NavLink to="/sales/contact" className="px-2 py-2 rounded-lg" style={active}>
-                  <AssessmentIcon fontSize="large" className="text-gray-500" />
+                  <AssessmentIcon fontSize="medium" className="text-gray-500" />
                 </NavLink>
               </li>
 
               <li className="my-5">
                 <NavLink to="/sales/product" className="px-2 py-2 rounded-lg" style={active}>
-                  <AssessmentIcon fontSize="large" className="text-gray-500" />
+                  <AssessmentIcon fontSize="medium" className="text-gray-500" />
                 </NavLink>
               </li>
 
               <li className="my-5">
                 <NavLink
                   to="/sales/users"
-                  className="bg-white px-2 py-2 rounded-full"
+                  className="bg-white px-2 py-2 rounded-lg"
                   style={active}
                 >
-                  <AssessmentIcon fontSize="large" className="text-gray-500"/>
+                  <AssessmentIcon fontSize="medium" className="text-gray-500"/>
                 </NavLink>
               </li>
             </ul>

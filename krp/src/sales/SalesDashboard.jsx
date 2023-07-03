@@ -7,10 +7,15 @@ import visible from "../images/visible.png";
 import hourglass from "../images/hourglass.png"
 import donotdisturb from "../images/do-not-disturb.png"
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import ReactStars from "react-rating-stars-component";
+import { render } from "react-dom";
 
 // import Bird from "../images/Bird.png"
 
 const SalesDashboard = () => {
+  const ratingChanged = (newRating) => {
+    console.log(newRating);
+  };
   return (
     <>
       <Sidebar />
@@ -32,7 +37,7 @@ const SalesDashboard = () => {
                       SEZEN AHISKAL
                     </h1>
 
-                    <div className="my-16">
+                    <div className="my-12">
                       <input
                         className="mr-2 mt-[0.3rem] h-3.5 w-8 appearance-none rounded-[0.4375rem] bg-neutral-300 before:pointer-events-none before:absolute before:h-3.5 before:w-3.5 before:rounded-full before:bg-transparent before:content-[''] after:absolute after:z-[2] after:-mt-[0.1875rem] after:h-5 after:w-5 after:rounded-full after:border-none after:bg-neutral-100 after:shadow-[0_0px_3px_0_rgb(0_0_0_/_7%),_0_2px_2px_0_rgb(0_0_0_/_4%)] after:transition-[background-color_0.2s,transform_0.2s] after:content-[''] checked:bg-primary checked:after:absolute checked:after:z-[2] checked:after:-mt-[3px] checked:after:ml-[1.0625rem] checked:after:h-5 checked:after:w-5 checked:after:rounded-full checked:after:border-none checked:after:bg-primary checked:after:shadow-[0_3px_1px_-2px_rgba(0,0,0,0.2),_0_2px_2px_0_rgba(0,0,0,0.14),_0_1px_5px_0_rgba(0,0,0,0.12)] checked:after:transition-[background-color_0.2s,transform_0.2s] checked:after:content-[''] hover:cursor-pointer focus:outline-none focus:ring-0 focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-5 focus:after:w-5 focus:after:rounded-full focus:after:content-[''] checked:focus:border-primary checked:focus:bg-primary checked:focus:before:ml-[1.0625rem] checked:focus:before:scale-100 checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] dark:bg-neutral-600 dark:after:bg-neutral-400 dark:checked:bg-primary dark:checked:after:bg-primary dark:focus:before:shadow-[3px_-1px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[3px_-1px_0px_13px_#3b71ca]"
                         type="checkbox"
@@ -73,7 +78,7 @@ const SalesDashboard = () => {
               {/* Card  Second */}
 
 
-              <div className="w-3/12 bg-[#f2f1ef] flex flex-col justify-center relative h-80 rounded-3xl ">
+              <div className="w-3/12 bg-[#f2f1ef] flex flex-col justify-center relative h-72 rounded-3xl ">
                 <div className="flex flex-col items-center justify-center ">
                   <div className="w-9/12 text-center bg-[#f9cecb] absolute rounded-3xl h-48 ">
                     <p className="py-14">Img</p>
@@ -89,7 +94,7 @@ const SalesDashboard = () => {
 
               </div>
 
-              <div className="w-3/12 bg-[#f2f1ef] flex flex-col justify-center relative h-80 rounded-3xl ">
+              <div className="w-3/12 bg-[#f2f1ef] flex flex-col justify-center relative h-72 rounded-3xl ">
                 <div className="flex flex-col items-center justify-center ">
                   <div className="w-9/12 text-center bg-yellow-400 absolute rounded-3xl h-48">
                     <p className="py-7">Img</p>
@@ -112,7 +117,7 @@ const SalesDashboard = () => {
           </div>
 
           <div className="w-5/12">
-            <h1 className="text-2xl font-bold">Reading Now</h1>
+            <h1 className="text-2xl font-semibold">Reading Now</h1>
             <div className="grid grid-cols-2 gap-x-8 gap-y-5 my-5">
               <div className="border rounded-2xl p-5">
                 <h1 className="font-bold">Spare</h1>
@@ -267,7 +272,12 @@ const SalesDashboard = () => {
                 <div className="flex justify-between w-9/12">
                   <div className="">
                     <p className="text-sm font-bold">Things We Never Got Over</p>
-                    <p className="">Star</p>
+                    <p className=""> <ReactStars
+                      count={5}
+                      onChange={ratingChanged}
+                      size={24}
+                      activeColor="#ffd700"
+                    /></p>
                   </div>
                   <div className="flex items-center text-gray-400">
                     <EastIcon />
@@ -284,7 +294,12 @@ const SalesDashboard = () => {
                 <div className="flex justify-between w-9/12">
                   <div className="">
                     <p className="text-sm font-bold"> Already brillent </p>
-                    <p className="">Star</p>
+                    <p className=""> <ReactStars
+                      count={5}
+                      onChange={ratingChanged}
+                      size={24}
+                      activeColor="#ffd700"
+                    /></p>
                   </div>
                   <div className="flex items-center text-gray-400">
                     <EastIcon />
@@ -304,11 +319,19 @@ const SalesDashboard = () => {
                 <div className="flex justify-between w-9/12">
                   <div className="">
                     <p className="text-sm font-bold">She Must Be Mad</p>
-                    <p className="">Star</p>
+                    <p className="">
+                      <ReactStars
+                        count={5}
+                        onChange={ratingChanged}
+                        size={24}
+                        activeColor="#ffd700"
+                      />
+
+                    </p>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-black px-3 py-2 rounded-xl flex items-center ">
-                      <span className="text-white mx-2 "><CheckBoxIcon/></span>
+                      <span className="text-white mx-2 "><CheckBoxIcon /></span>
                       <p className="text-white text-xs">User Choise</p>
                     </div>
                   </div>
