@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [formValues, setFormValues] = useState({
@@ -12,6 +13,7 @@ const Signup = () => {
     password: "",
   });
   const [error, setError] = useState(false);
+  const navigate = useNavigate();
 
   const inputEvent = (e) => {
     const { name, value } = e.target;
@@ -55,7 +57,8 @@ const Signup = () => {
           if (response.data.message) {
             alert(response.data.message);
           } else {
-            alert("User is Register");
+            alert("Account Created Successfully");
+            navigate("/login");
           }
         });
     }
