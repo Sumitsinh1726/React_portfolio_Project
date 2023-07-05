@@ -33,6 +33,7 @@ const Login = () => {
             alert(response.data.message);
           } else {
             navigate("/");
+            localStorage.setItem("UserId", response.data[0].user_id)
           }
         });
     }
