@@ -37,6 +37,7 @@ app.post("/register", (req, res) => {
   );
 });
 
+
 // User Login
 app.post("/login", (req, res) => {
   const email = req.body.email;
