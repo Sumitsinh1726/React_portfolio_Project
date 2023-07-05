@@ -8,7 +8,7 @@ import hourglass from "../images/hourglass.png"
 import donotdisturb from "../images/do-not-disturb.png"
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import ReactStars from "react-rating-stars-component";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 
 // import Bird from "../images/Bird.png"
 
